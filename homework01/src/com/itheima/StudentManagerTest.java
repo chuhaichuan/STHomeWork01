@@ -92,7 +92,10 @@ public class StudentManagerTest {
 		for(int x=0; x<array.size(); x++) {
 			Student s = array.get(x);
 			StringBuilder sb = new StringBuilder();
-			sb.append(s.getId()).append(",").append(s.getName()).append(",").append(s.getClassRoom()).append(",").append(s.getSubject()).append(",").append(s.getResult());
+			//sb.append(s.getId()).append(",").append(s.getName()).append(",").append(s.getClassRoom()).append(",").append(s.getSubject//()).append(",").append(s.getResult());
+                                                //ÎÊÌâ15
+                                                sb.append(s.getId()).append(",").append(s.getName()).append(",").append(s.getClassRoom())
+                                                             .append(",").append(s.getSubject()).append(",").append(s.getResult());
 			bw.write(sb.toString());
 			bw.newLine();
 			bw.flush();
